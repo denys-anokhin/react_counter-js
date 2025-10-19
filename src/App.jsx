@@ -5,16 +5,14 @@ export const App = () => {
   const [count, setCount] = useState(0);
 
   const addOne = () => {
-    // eslint-disable-next-line no-shadow
-    setCount(count => {
-      return count + 1;
+    setCount(prevCount => {
+      return prevCount + 1;
     });
   };
 
   const add100 = () => {
-    // eslint-disable-next-line no-shadow
-    setCount(count => {
-      return count + 100;
+    setCount(prevCount => {
+      return prevCount + 100;
     });
   };
 
